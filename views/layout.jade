@@ -1,0 +1,36 @@
+doctype html
+html
+  head
+    title= title
+    //Main CSS
+    link(rel='stylesheet', href='/stylesheets/styles.css')
+
+    //Bootstrap
+    link(rel='stylesheet', href='/lib/bootstrap/dist/css/bootstrap.min.css')
+
+  body
+    nav.navbar(role="navigation")
+        div.container
+            div.navigation
+                a(href="/")
+                  img(src='/static/images/medeina-lumber-logo.png')
+                ul
+                    li
+                        a(href="/") Home
+                    li
+                        a(href="#products") Products
+                    li
+                        a(href="#about") About
+                    li
+                        a(href="#contact") Contact
+
+    block content
+
+    //jQuery
+    script(src="/lib/jquery/dist/jquery.min.js")
+
+    //Angular JS
+    script(src='/lib/angular/angular.min.js')
+
+    //Bootstrap JS
+    script(src='/lib/bootstrap/dist/js/bootstrap.min.js')
