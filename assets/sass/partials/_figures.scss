@@ -1,3 +1,7 @@
+.navbar {
+    margin-bottom: 10px !important;
+}
+
 .navigation {
     ul {
         list-style: none;
@@ -10,12 +14,24 @@
         padding-left: 12px;
       }
 
+     a {
+        font-family: $title;
+        font-size: 14px;
+      }
+
 }
 
 .hero-image {
     background-image: url(/images/medeina-lumber-hero.jpg);
     background-position: center bottom;
-    height: 500px;
+    height: 200px;
     width: 100%;
+}
+
+
+@media screen and (max-width$break-md) {
+    .hero-image {
+      height: 500px;
+    }
 }
 

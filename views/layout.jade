@@ -9,14 +9,13 @@ html
     meta(name='description', content='')
     meta(name='viewport', content='width=device-width, initial-scale=1')
 
+    //Bootstrap
+    link(rel='stylesheet', href='/lib/bootstrap/dist/css/bootstrap.min.css')
 
     //Main CSS
     link(rel='stylesheet', href='/stylesheets/styles.css')
 
-    //Bootstrap
-    link(rel='stylesheet', href='/lib/bootstrap/dist/css/bootstrap.min.css')
-
-  body(ng-app="medeinalumber")
+   body(ng-app="medeinalumber")
     nav.navbar(role="navigation")
         div.container
             div.navigation
@@ -46,6 +45,10 @@ html
 
     //Bootstrap JS
     script(src='/lib/bootstrap/dist/js/bootstrap.min.js')
+
+    // TypeKit
+    <script src="https://use.typekit.net/qoc4xuk.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
     //App.js
     script(src="/javascript/app.js")
