@@ -13,13 +13,15 @@
   </head>
   <body ng-app="medeinalumber">
     <nav role="navigation" class="navbar">
-      <div class="container">
-        <div class="navigation"><a href="/"><img src="/images/medeina-lumber-logo.png"></a>
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="#products">Products</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+      <div class="navigation-container">
+        <div class="navigation"><a href="#/"><img src="/images/medeina-lumber-logo.png"></a>
+          <label for="show-menu" class="show-menu">Show Menu</label>
+          <input type="checkbox" id="show-menu" role="button">
+          <ul id="menu">
+            <li><a href="#/">Home</a></li>
+            <li><a href="#/products">Products</a></li>
+            <li><a href="#/about">About</a></li>
+            <li><a href="#/contact">Contact</a></li>
           </ul>
         </div>
       </div>

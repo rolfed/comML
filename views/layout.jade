@@ -15,24 +15,10 @@ html
     //Main CSS
     link(rel='stylesheet', href='/stylesheets/styles.css')
 
-   body(ng-app="medeinalumber")
-    nav.navbar(role="navigation")
-        div.container
-            div.navigation
-                a(href="/")
-                  img(src='/images/medeina-lumber-logo.png')
-                ul
-                    li
-                        a(href="/") Home
-                    li
-                        a(href="#products") Products
-                    li
-                        a(href="#about") About
-                    li
-                        a(href="#contact") Contact
+  body(ng-app="medeinalumber")
+    include nav
 
     block content
-
 
     //jQuery
     script(src="/lib/jquery/dist/jquery.min.js")
