@@ -4,11 +4,22 @@ var gulp = require('gulp'),
 	browserify = require('gulp-browserify'),
 	compass = require('gulp-compass'),
 	connect = require('gulp-connect'),
-    nodemon = require('gulp-nodemon');
+    nodemon = require('gulp-nodemon')
+    jade = require('gulp-jade');
 
 var jsSources = ['assets/javascripts/*.js'];
 var sassSources = ['assets/sass/stylesheet.scss'];
 var htmlSources = ['*.html'];
+
+
+gulp.task('jade', function() {
+      return gulp.src('views/**/*.jade')
+          .pipe(jade({
+            pretty: true
+          })) // pip to jade plugin
+
+          .pipe(gulp.dest('public/views')); // tell gulp our output folder
+});
 
 gulp.task('js', function(){
 	return gulp.src(jsSources)
@@ -32,6 +43,7 @@ gulp.task('compass', function(){
 	});
 
 gulp.task('watch', function(){
+    gulp.watch('views/*.jade', ['jade']);
 	gulp.watch('assets/sass/**/*.scss',['compass']);
 	gulp.watch(jsSources, ['js']);
 	gulp.watch(htmlSources, ['html']);
@@ -51,4 +63,4 @@ gulp.task('html', function(){
 	.pipe(connect.reload());
 	});
 
-gulp.task('default', ['html', 'js','compass', 'watch', 'start']);
+gulp.task('default', ['jade', 'html', 'js','compass', 'watch', 'start']);
