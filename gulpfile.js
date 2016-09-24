@@ -3,28 +3,28 @@ var gulp = require('gulp'),
 	concat = require('gulp-concat'),
 	browserify = require('gulp-browserify'),
 	compass = require('gulp-compass'),
-	connect = require('gulp-connect');
+	connect = require('gulp-connect'),
+    nodemon = require('gulp-nodemon');
 
-var jsSources = ['assets/javascript/*.js'];
+var jsSources = ['assets/javascripts/*.js'];
 var sassSources = ['assets/sass/stylesheet.scss'];
 var htmlSources = ['*.html'];
 
 gulp.task('js', function(){
-	gulp.src(jsSources)
-	.pipe(concat('script.js'))
-	//.pipe(browserify())
-	.pipe(gulp.dest('assets/js'))
-	.pipe(connect.reload());
+	return gulp.src(jsSources)
+      .pipe(concat('../../public/javascript/app.js'))
+      .pipe(browserify())
+      .pipe(gulp.dest('public/javascript'))
+      .pipe(connect.reload());
 	});
 
 gulp.task('compass', function(){
-	gulp.src(sassSources)
+   gulp.src(sassSources)
 	.pipe(compass({
 		sass: 'assets/sass',
         css: 'public/stylesheets',
 		image: 'images',
 		style: 'compressed',
-		require: ['modular-scale']
 	}))
 		.on('error', gutil.log)
 	.pipe(gulp.dest('public/stylesheets'))
@@ -37,16 +37,18 @@ gulp.task('watch', function(){
 	gulp.watch(htmlSources, ['html']);
 	});
 
-gulp.task('connect', function(){
-	connect.server({
-		root: '',
-		livereload: true
-		});
-	});
+gulp.task('start', function () {
+    nodemon({
+         script: 'app.js',
+         ext: 'js html',
+         env: { 'NODE_ENV': 'development' }
+        });
+});
+
 
 gulp.task('html', function(){
 	gulp.src(htmlSources)
 	.pipe(connect.reload());
 	});
 
-gulp.task('default', ['html', 'js','compass', 'watch', 'connect']);
+gulp.task('default', ['html', 'js','compass', 'watch', 'start']);
