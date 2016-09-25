@@ -9,7 +9,20 @@ app.service('medeinalumber', function($http, $q) {
 /** Controller **/
 
 app.controller('MainCtrl', function() {
-  console.log('MainxCtrl is loading');
+  console.log('MainCtrl is loading');
+});
+
+app.controller('ProductsCtrl', function($scope, $http) {
+  console.log('ProductsCtrl is loading');
+
+  $http.get('../data/products.json').
+    success(function(data, status, header, config) {
+        $scope.products = data;
+    }).
+
+    error(function(data, status, header, config) {
+        // log error
+    });
 });
 
 /** Angular Routes **/
@@ -21,6 +34,12 @@ app.config(['$routeProvider', function($routeProvider) {
         .when('/', {
             templateUrl: '../views/home.html',
             controller: 'MainCtrl'
+        })
+
+        // Products
+        .when('/products', {
+            templateUrl: '../views/products.html',
+            controller: 'ProductsCtrl'
         });
 }]);
 

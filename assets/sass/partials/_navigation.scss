@@ -119,4 +119,39 @@ input[type=checkbox]:checked ~ #menu {
     display: block;
 }
 
+@media screen and (min-width: $break-lg) {
+    .navigation {
+      padding-bottom: 15px;
+    }
+
+    .navigation img {
+      display: inline-block;
+      margin-left: 15px;
+    }
+
+    #menu {
+      display: inline-block;
+    }
+
+    label.show-menu {
+      display:none;
+    }
+
+    ul#menu {
+      background-color: rgba($lightBrown, 0);
+      float: right;
+      position: absolute;
+      padding-left: 430px;
+    }
+
+    .navigation  li {
+      display: inline;
+    }
+
+    .navigation ul a {
+        background: rgba($lightBrown, 0);
+      }
+}
+
+
 

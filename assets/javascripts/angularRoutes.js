@@ -7,5 +7,11 @@ app.config(['$routeProvider', function($routeProvider) {
         .when('/', {
             templateUrl: '../views/home.html',
             controller: 'MainCtrl'
+        })
+
+        // Products
+        .when('/products', {
+            templateUrl: '../views/products.html',
+            controller: 'ProductsCtrl'
         });
 }]);
