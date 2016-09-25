@@ -6,12 +6,48 @@ p {
     font-family: $content;
 }
 
+a {
+    font-family: $title
+  }
+
 h1 {
-    font-size: 25px;
+    font-size: ms(0.25);
     color: $white;
 }
 
+h2 {
+    font-size: ms(0);
+}
+
+h3 {
+    font-size: ms(-0.25);
+}
+
+h4 {
+    font-size: ms(-0.50);
+}
+
+h5, .footer-link-size {
+    font-size: ms(-1);
+}
+
+h6 {
+    font-size: ms(-1.25);
+}
+
+p {
+    font-size: ms(-0.5);
+}
 .hero-title-container {
     margin: 1em;
 }
 
+a {
+  font-size: ms(-0.5);
+}
+
+ul.footer-navigation {
+  a {
+    font-size: ms(-1);
+  }
+}

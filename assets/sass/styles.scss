@@ -1,6 +1,9 @@
 // Modules
 @import "partials/base";
 
+// Vendors
+@import "vendor/vendors";
+
 // Partials
 @import "partials/reset";
 @import "partials/navigation";
@@ -10,5 +13,3 @@
 @import "partials/figures";
 @import "partials/grids";
 
-// Vendors
-@import "vendor/vendors";

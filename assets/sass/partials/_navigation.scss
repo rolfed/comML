@@ -1,12 +1,13 @@
 .navigation-container {
-    width: 101%;
-    margin-right: -1px;
-    margin-left: -1px;
+    width: 100%;
 }
 .navbar {
     margin-bottom: 10px !important;
 }
 
+nav.navbar {
+    border: none;
+}
 .navigation {
 
     img {

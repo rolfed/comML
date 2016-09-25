@@ -1,3 +1,32 @@
 footer {
   background-color: $brown;
+  position: inherit;
+  display: inline-flex;
+  width: 100%;
+
+}
+
+.footer-container {
+   padding-right: 15px;
+   padding-left: 15px;
+ }
+
+ul.footer-navigation {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 2px;
+
+
+    li {
+      padding-top: 1px;
+      padding-bottom: 1px;
+    }
+
+}
+
+ul.footer-navigation.follow-us {
+  li {
+    float: left;
+    margin-right: ms(-1);
+  }
 }
