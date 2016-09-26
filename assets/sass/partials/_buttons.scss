@@ -17,3 +17,9 @@ button.button {
   background: rgba(0,0,0,0);
   margin-top: 20px;
 }
+
+.contact-us-link:hover, .contact-us-link:focus {
+     color: darken($lightBrown, 25%);
+     text-decoration: none;
+ }
+
