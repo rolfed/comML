@@ -140,8 +140,7 @@ input[type=checkbox]:checked ~ #menu {
     ul#menu {
       background-color: rgba($lightBrown, 0);
       float: right;
-      position: absolute;
-      padding-left: 430px;
+      width: 35%;
     }
 
     .navigation  li {

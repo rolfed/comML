@@ -4,8 +4,18 @@ div.hero-image-products
             div.col-xm-12.hero-title-container
                 h1 Products
 div.container
+    div.row
+        div.col-sm-12
+          h2.green Species
+          p Medeina Lumber prides itself on offering the highest quality forest products available. Our incredible variety meets the needs of your home or business. Find out more about our products below.
+
     div.row(ng-controller="ProductsCtrl")
       div(ng-repeat="product in products").col-sm-6
+          img(src="{{product.pic}}").product-images.img-responsive
           h3.green {{product.title}}
           p {{product.description}}
           p {{product.price}}
+
+    div.row
+        div.col-md-12
+            p Please note that prices...

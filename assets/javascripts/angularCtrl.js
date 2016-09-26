@@ -16,3 +16,16 @@ app.controller('ProductsCtrl', function($scope, $http) {
         // log error
     });
 });
+
+app.controller('AboutCtrl', function() {
+  console.log("AboutCtrl is loading");
+});
+
+app.controller('ContactCtrl', function() {
+  console.log("ContactCtrl");
+});
+
+app.controller('404Ctrl', function(req, res) {
+  console.log(req, res);
+  res.status(404);
+});

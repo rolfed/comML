@@ -9,11 +9,22 @@
   </div>
 </div>
 <div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      <h2 class="green">Species</h2>
+      <p>Medeina Lumber prides itself on offering the highest quality forest products available. Our incredible variety meets the needs of your home or business. Find out more about our products below.</p>
+    </div>
+  </div>
   <div ng-controller="ProductsCtrl" class="row">
-    <div ng-repeat="product in products" class="col-sm-6">
+    <div ng-repeat="product in products" class="col-sm-6"><img src="{{product.pic}}" class="product-images img-responsive"/>
       <h3 class="green">{{product.title}}</h3>
       <p>{{product.description}}</p>
       <p>{{product.price}}</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <p>Please note that prices...</p>
     </div>
   </div>
 </div>

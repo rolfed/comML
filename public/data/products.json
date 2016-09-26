@@ -1,7 +1,45 @@
 [
     {
         "id" : 1,
+        "pic": "/images/tree-1.jpg",
+        "title" : "Walnut",
+        "description" : "Walnut is one of the most versatile and widespread hardwoods, its strength and durability, along with its variety of shades and grains, validating its excellent woodworking properties. ",
+        "price" : "$10.00"
+    },
+    {
+        "id" : 2,
+        "pic": "/images/tree-2.jpg",
         "title" : "Ash",
-        "description" : "Bla bla bla bla."
+        "description" : "Ash is a tough, heavy and permeable hardwood. Its grain is similar to oak and is white to light brown in color Ash is widely used for structural frames and furniture, and because it is often less expensive than other hardwoods, ash is widely sought after. ",
+        "price" : "$10.00"
+    },
+    {
+        "id" : 3,
+        "pic": "/images/tree-3.jpg",
+        "title" : "Teak",
+        "description" : "Teak is a heavy, strong and durable hardwood similar in its woodworking properties to walnut. It is a yellow to dark brown wood often used in furniture making.",
+        "price" : "$10.00"
+    },
+    {
+        "id" : 4,
+        "pic": "/images/tree-4.jpg",
+        "title" : "Beech",
+        "description" : "Beech, similar to walnut and teak in its woodworking properties, is a hard, strong, relatively nonporous and heavy hardwood and is similar to appearance to maple. Beech is often used for frames and veneers. Birch is a hard, heavy and close grained hardwood with a light or reddish color.",
+        "price" : "$10.00"
+    },
+    {
+        "id" : 5,
+        "pic": "/images/tree-5.jpg",
+        "title" : "Mahogany",
+        "description" : "Mahogany, is often thought to be the hardest, strongest and best quality hardwood – quality largely depending on region of origin – and due to this, it varies greatly in price. It has a reddish brown color and is an excellent carving wood.",
+        "price" : "$10.00"
+    },
+    {
+        "id" : 6,
+        "title" : "Cherry",
+        "pic": "/images/tree-6.jpg",
+        "description" : "Cherry is a moderately hard, strong and closed grain hardwood that is easy to carve and polish and has a light to dark reddish brown color. ",
+        "price" : "$10.00"
     }
+
 ]

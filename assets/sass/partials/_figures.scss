@@ -1,6 +1,8 @@
 
 .hero-image,
-.hero-image-products {
+.hero-image-products,
+.hero-image-about,
+.hero-image-contact {
     background-position: center bottom;
     height: 200px;
     width: 100%;
@@ -14,13 +16,28 @@
 .hero-image-products {
     background-image: url(/images/medeina-lumber-hero-products.jpg);
 }
+
+.hero-image-about {
+    background-image: url(/images/medeina-lumber-hero-about.jpg);
+
+}
+
+.hero-image-contact {
+    background-image: url(/images/medeina-lumber-hero-contact.jpg);
+}
+
 .hero-title-container {
     padding-bottom: 45px;
 }
 
 .content-container {
     padding-bottom: 25px;
-  }
+}
+
+.product-images {
+    width: 100%;
+
+}
 
 @media screen and (min-width: $break-md) {
     .hero-image {
